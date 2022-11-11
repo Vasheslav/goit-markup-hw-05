@@ -28,7 +28,7 @@
         <nav class="nav">
           <a href="./index.html" class="logo link">Web<span class="studio">Studio</span></a>
           <ul class="nav-site list">
-            <li class="nav-list"><a href="./index.html" class="link">Студія</a></li>
+            <li class="nav-list"><a href="./index.html" class="link current">Студія</a></li>
             <li class="nav-list"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="nav-list"><a href="" class="link">Контакти</a></li>
           </ul>
@@ -58,7 +58,7 @@
       <!-- блок с заголовком та кнопкою-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
       </section>
 
       <!-- список з особливостями-->
@@ -574,5 +574,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>
+          <svg class="icon-close" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
